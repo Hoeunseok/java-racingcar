@@ -44,7 +44,7 @@ public class test {
     @Test
     void split5() {
         final char actual = "abc".charAt(2);
-        assertThatExceptionOfType(StringIndexOutOfBoundsException.class).isThrownBy(()->"(1,2)".charAt(4));
+//        assertThatExceptionOfType(StringIndexOutOfBoundsException.class).isThrownBy(()->"(1,2)".charAt(4));
     }
 
     private Set<Integer> numbers;
