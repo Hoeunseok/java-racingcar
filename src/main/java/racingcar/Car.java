@@ -7,27 +7,27 @@ public class Car {
     private StringBuffer path = new StringBuffer();
     private int ranNum = 0;
     private Random random = new Random();
-    int set_carName(String input_name)
-    {
+
+    int set_carName(String input_name) {
         this.name = input_name;
         return 0;
     }
-    String get_carName()
-    {
+
+    String get_carName() {
         return this.name;
     }
-    StringBuffer get_carPath()
-    {
+
+    StringBuffer get_carPath() {
         return this.path;
     }
-    int get_carPosition()
-    {
+
+    int get_carPosition() {
         return this.position;
     }
-    void move()
-    {
+
+    void move() {
         ranNum = random.nextInt(10);
-        if(ranNum >= 4) {
+        if (ranNum >= 4) {
             this.position++;
             path.append("ㅡ");
         }

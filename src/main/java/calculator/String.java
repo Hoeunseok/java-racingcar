@@ -2,7 +2,7 @@ package calculator;
 
 import java.util.Scanner;
 
-public class test {
+public class String {
     static int add(int a, int b)
     {
         return a + b;
@@ -41,15 +41,15 @@ public class test {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static void main(java.lang.String[] args) {
         int result = 0;
         System.out.print("Input String : ");
         Scanner in = new Scanner(System.in);
-        String s_input = in.next();
+        java.lang.String s_input = in.next();
         //숫자 split
-        String[] ArraysStrArith = s_input.split("[0-9]+");
+        java.lang.String[] ArraysStrArith = s_input.split("[0-9]+");
         //사칙연산 부호 split
-        String[] ArraysStrNum = s_input.split("[+\\-*/]");
+        java.lang.String[] ArraysStrNum = s_input.split("[+\\-*/]");
 
         for(int i = 1; i < ArraysStrNum.length-1; i++)
         {

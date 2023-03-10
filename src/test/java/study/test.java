@@ -11,13 +11,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThatExceptionOfType;
 
 
 public class test {
     @Test
     void split() {
-        final String[] actual = "1,2".split(",");
+        final java.lang.String[] actual = "1,2".split(",");
         // actual contains [1, 2]
         System.out.println(Arrays.toString(actual));
         assertThat(actual).containsExactly("1","2");
@@ -25,13 +24,13 @@ public class test {
 
     @Test
     void split2() {
-        final String[] actual = "1".split(",");
+        final java.lang.String[] actual = "1".split(",");
         assertThat(actual).containsExactly("1");
     }
 
     @Test
     void split3() {
-        final String actual = "(1,2)".substring(1,4);
+        final java.lang.String actual = "(1,2)".substring(1,4);
         assertThat(actual).isEqualTo("1,2");
     }
 
